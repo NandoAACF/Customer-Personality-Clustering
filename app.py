@@ -1,9 +1,10 @@
 import streamlit as st
 from page_cluster import show_cluster
+from page_information import show_information
 
-page = st.sidebar.selectbox("Choose Option", ("Cluster", "Model Information"))
+page = st.sidebar.selectbox("Choose Option", ("Cluster", "Information"))
 
 if page == 'Cluster':
     show_cluster()
-# elif page == 'Model Information':
-#     show_model()
+elif page == 'Information':
+    show_information()
